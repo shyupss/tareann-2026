@@ -18,6 +18,8 @@ ipython-pygments-lexers==1.1.1
     # via ipython
 jedi==0.20.0
     # via ipython
+joblib==1.5.3
+    # via scikit-learn
 jupyter-client==8.8.0
     # via ipykernel
 jupyter-core==5.9.1
@@ -31,7 +33,10 @@ matplotlib-inline==0.2.2
 nest-asyncio==1.6.0
     # via ipykernel
 numpy==2.4.6
-    # via pandas
+    # via
+    #   pandas
+    #   scikit-learn
+    #   scipy
 packaging==26.2
     # via ipykernel
 pandas==3.0.3
@@ -64,10 +69,16 @@ pyzmq==27.1.0
     # via
     #   ipykernel
     #   jupyter-client
+scikit-learn==1.8.0
+    # via tareann-2026 (pyproject.toml)
+scipy==1.17.1
+    # via scikit-learn
 six==1.17.0
     # via python-dateutil
 stack-data==0.6.3
     # via ipython
+threadpoolctl==3.6.0
+    # via scikit-learn
 tornado==6.5.6
     # via
     #   ipykernel
