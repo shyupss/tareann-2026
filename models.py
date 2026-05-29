@@ -6,7 +6,7 @@ class MLP_Simple(nn.Module):
     def __init__(self):
         super().__init__()
         self.network = nn.Sequential(
-            nn.Linear(6, 16),
+            nn.Linear(7, 16),
             nn.ReLU(),
             nn.Linear(16, 1),
             nn.Sigmoid()
@@ -21,7 +21,7 @@ class MLP_Medium(nn.Module):
     def __init__(self):
         super().__init__()
         self.network = nn.Sequential(
-            nn.Linear(6, 32),
+            nn.Linear(7, 32),
             nn.ReLU(),
             nn.Dropout(0.3),
             nn.Linear(32, 16),
@@ -39,7 +39,7 @@ class MLP_Deep(nn.Module):
     def __init__(self):
         super().__init__()
         self.network = nn.Sequential(
-            nn.Linear(6, 64),
+            nn.Linear(7, 64),
             nn.BatchNorm1d(64),
             nn.ReLU(),
             nn.Dropout(0.3),
